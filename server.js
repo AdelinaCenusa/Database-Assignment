@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 const app = express();
 
 const dbURI =
-  'mongodb+srv://Ezzo:Password123@cluster0.3jr3w.mongodb.net/Assignment_Adelina?retryWrites=true&w=majority';
+  'mongodb+srv://Adelina:anileda@cluster0.3jr3w.mongodb.net/Assignment_Adelina?retryWrites=true&w=majority';
 
 mongoose
   .connect(dbURI, {
