@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header-div > a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #f0ad4e;
+  background-color: #f0ad4e;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+header {
+  width: 100%;
+  background-color: #eaf8fb;
+  display: flex;
+}
+#title {
+  width: 12%;
+}
+#title > a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+  font-weight: 600;
+}
+#title > a > h2 {
+  padding: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+#header-div {
+  padding: 2rem;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+#to-do-h1 {
+  width: 100%;
+  text-align: center;
+}
+#task-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+#addTask {
+  width: 50%;
+  height: 100px;
+  outline: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 1rem;
+}
+#to-do-btn-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#submitTask {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  width: 10%;
+  height: 30px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+#submitTask:hover {
+  background-color: #45a049;
+}
+#showTasks-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#showTasks {
+  width: 50%;
+  margin-top: 1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+}
+#edit-task-div {
+  display: flex;
+  justify-content: center;
+}
+.edit-task {
+  text-decoration: none;
+  width: 5%;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #5bc0de;
+  background-color: #5bc0de;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+  margin-top: 1rem;
+}
+#container-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  padding: 2rem;
+  margin-top: 1rem;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 8px;
+  text-align: center;
+}
+.read-delete-div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.read-more {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #5bc0de;
+  background-color: #5bc0de;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+}
+.delete-btn {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  background-color: #d9534f;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+}
+#showTasks {
+  padding: 2rem;
+  text-align: center;
+}
+#form-container {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#register-form {
+  width: 50%;
+}
+.email,
+.password,
+.username {
+  color: red;
+}
+input:not([type='submit']),
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #5d5d5d;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+  outline: none;
+}
+input:not([type='submit']):focus {
+  background-color: #dddddd;
+}
+
+input[type='submit'] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+input[type='submit']:hover {
+  background-color: #45a049;
+}
+
+#footer-div {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #cfcfcf;
+  color: #535353;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+#footer-to-do {
+  text-transform: uppercase;
+}

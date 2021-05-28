@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<div>
+  <form action="/<%= tasks.id %>?_method=PUT" method="POST">
+    <div id="task-div">
+      <textarea
+        name="record"
+        id="addTask"
+        cols="30"
+        rows="10"
+        placeholder="Your Task"
+        required
+      >
+<%= tasks.record %> </textarea
+      >
+    </div>
+    <div id="to-do-btn-div">
+      <button type="submit" name="submitTaks" id="submitTask">Submit</button>
+    </div>
+  </form>
+</div>
+
+<%- include('partials/footer') %>

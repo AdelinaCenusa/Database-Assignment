@@ -1,0 +1,19 @@
+<%- include('main') -%>
+
+<header>
+  <div id="title">
+    <a href="/">
+      <h2>To Do Or Not To Do</h2>
+    </a>
+  </div>
+  <div id="header-div">
+    <% if (user){ %>
+
+    <h2>Hello, <%= user.username %></h2>
+    <a href="/logout">Log Out</a>
+    <% }else{ %>
+    <a href="/loginUser">Log in</a>
+    <a href="/registerUser">Register</a>
+    <% } %>
+  </div>
+</header>

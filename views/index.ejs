@@ -1,0 +1,73 @@
+<%- include('partials/header') %>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div id="to-do-h1">
+      <form id="task-form">
+      <h1><span class="styling">To Do</span> List</h1>
+    </div>
+    <div id="task-div">
+      <textarea
+        name="record"
+        id="addTask"
+        cols="30"
+        rows="10"
+        placeholder="Your Task"
+        required
+      ></textarea>
+    </div>
+    <div id="to-do-btn-div">
+      <button type="submit" name="submitTaks" id="submitTask">Add</button>
+    </div>
+  </form>
+</div>
+<% tasks.forEach(task => { %>
+<div id="container-holder">
+  <div class="container">
+    <div class="task-div"><%= task.record%></div>
+  </div>
+</div>
+<div class="read-delete-div">
+  <a class="read-more" href="/<%= task.id %>"> Read more</a>
+  <form
+    class="delete-btn-form"
+    action="/<%= task.id %>?_method=DELETE"
+    method="POST"
+  >
+    <button type="submit" class="delete-btn">Delete</button>
+  </form>
+</div>
+
+<% }) %>
+  </body>
+</html>
+
+<script>
+
+  
+  const submitTask = document.querySelector('#task-form');
+  submitTask.addEventListener('submit', async (event) =>{
+
+  const record = submitTask.addTask.value
+  try{
+  const res = await fetch('/', {
+        method: 'POST',
+        body: JSON.stringify({
+        record
+        }),
+        headers: { 'Content-type': 'application/json' },
+      });
+    }
+    catch (error){
+      console.log(error)
+    }
+  });
+</script>
+<%- include('partials/footer') %>

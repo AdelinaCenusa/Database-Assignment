@@ -1,0 +1,9 @@
+<%- include('partials/header') %>
+
+<div id="showTasks-holder">
+  <div id="showTasks"><%= tasks.record %></div>
+</div>
+<div id="edit-task-div">
+  <a class="edit-task" href="/editTask/<%= tasks.id %> ">Edit</a>
+</div>
+<%- include('partials/footer') %>
