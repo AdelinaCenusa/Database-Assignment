@@ -1,7 +1,7 @@
 # Adelina Advanced Database Assignment
 
-Place heroku's link here
-Link to hosted git repository here
+https://whispering-badlands-66119.herokuapp.com/ 
+https://github.com/AdelinaCenusa/Database-Assignment.git
 
 ## Introduction
 

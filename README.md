@@ -70,8 +70,9 @@ npm install --save-dev nodemon
 ```javascript
 //change to your mongoDB cluster
 //the following piece of code is located in the file server.js
-const dbURI =
-  'mongodb+srv://name:password@cluster0.3jr3w.mongodb.net/DBname?retryWrites=true&w=majority';
+const dbURI =   'mongodb+srv://Adelina:anileda@cluster0.x6mox.mongodb.net/Assignment?retryWrites=true&w=majority';
+
+ 
 ```
 
 ## Run
